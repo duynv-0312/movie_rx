@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct FavoriteViewModel {
+    let useCase: FavoriteUseCaseType
+    let navigator: FavoriteNavigatorType
+}
+
+extension FavoriteViewModel {
+    
+}

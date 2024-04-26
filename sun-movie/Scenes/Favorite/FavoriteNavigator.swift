@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+protocol FavoriteNavigatorType {
+    
+}
+
+struct FavoriteNavigator: FavoriteNavigatorType {
+    var navigationController: UINavigationController
+}

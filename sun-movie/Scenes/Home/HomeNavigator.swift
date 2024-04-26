@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import UIKit
+
+protocol HomeNavigatorType {
+    
+}
+
+struct HomeNavigator: HomeNavigatorType {
+    var navigationController: UINavigationController
+    
+}

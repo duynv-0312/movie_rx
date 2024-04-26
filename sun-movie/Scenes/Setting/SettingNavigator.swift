@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+protocol SettingNavigatorType {
+    
+}
+
+struct SettingNavigator: SettingNavigatorType {
+    var navigationController: UINavigationController
+}

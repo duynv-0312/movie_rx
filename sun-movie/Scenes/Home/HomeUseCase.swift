@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol HomeUseCaseType {
+    
+}
+
+struct HomeUseCase: HomeUseCaseType {
+    
+}

@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct SettingViewModel {
+    let useCase: SettingUseCaseType
+    let navigator: SettingNavigatorType
+}
+
+extension SettingViewModel {
+    
+}

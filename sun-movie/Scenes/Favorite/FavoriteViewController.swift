@@ -7,7 +7,8 @@
 
 import UIKit
 
-final class FavoriteViewController: UIViewController {
+final class FavoriteViewController: UIViewController, Bindable {
+    var viewModel: FavoriteViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

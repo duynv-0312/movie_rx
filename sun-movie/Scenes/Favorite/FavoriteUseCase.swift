@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol FavoriteUseCaseType {
+
+}
+
+struct FavoriteUseCase: FavoriteUseCaseType {
+    
+}

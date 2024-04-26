@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct HomeViewModel {
+    var useCase: HomeUseCaseType
+    var navigator: HomeNavigatorType
+}
+
+extension HomeViewModel {
+    
+}

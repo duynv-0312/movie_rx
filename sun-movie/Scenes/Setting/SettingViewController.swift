@@ -7,7 +7,8 @@
 
 import UIKit
 
-final class SettingViewController: UIViewController {
+final class SettingViewController: UIViewController, Bindable {
+    var viewModel: SettingViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

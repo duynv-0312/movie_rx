@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+protocol SettingUseCaseType {
+   
+}
+
+struct SettingUseCase: SettingUseCaseType {
+    
+}
