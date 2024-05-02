@@ -33,6 +33,10 @@
 		04E857692BDB43C7005FF347 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E857682BDB43C7005FF347 /* Bindable.swift */; };
 		04E8576F2BDB4473005FF347 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8576E2BDB4473005FF347 /* BaseNavigationController.swift */; };
 		3EDC98993A138638CEFCDE6D /* Pods_sun_movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05820063528F8F74B7CF2675 /* Pods_sun_movie.framework */; };
+		04E857742BDB5155005FF347 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E857732BDB5155005FF347 /* MovieRepository.swift */; };
+		04E857792BDB54F2005FF347 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E857782BDB54F2005FF347 /* APIService.swift */; };
+		04E8577B2BDB54FF005FF347 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8577A2BDB54FF005FF347 /* CoreDataManager.swift */; };
+		04E8577D2BDB5528005FF347 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E8577C2BDB5528005FF347 /* Urls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 		05820063528F8F74B7CF2675 /* Pods_sun_movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sun_movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D021688E0805185601830CA /* Pods-sun-movie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sun-movie.debug.xcconfig"; path = "Target Support Files/Pods-sun-movie/Pods-sun-movie.debug.xcconfig"; sourceTree = "<group>"; };
 		BEBA71FF791C2438751A5B2B /* Pods-sun-movie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sun-movie.release.xcconfig"; path = "Target Support Files/Pods-sun-movie/Pods-sun-movie.release.xcconfig"; sourceTree = "<group>"; };
+		04E857732BDB5155005FF347 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		04E857782BDB54F2005FF347 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		04E8577A2BDB54FF005FF347 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		04E8577C2BDB5528005FF347 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +113,9 @@
 				04E857232BDB4017005FF347 /* SceneDelegate.swift */,
 				04E857382BDB4065005FF347 /* Supports */,
 				04E857392BDB4072005FF347 /* Resources */,
+				04E857752BDB547C005FF347 /* Data */,
+				04E857702BDB5117005FF347 /* Domain */,
 				04E8573A2BDB407B005FF347 /* Scenes */,
-				04E8572D2BDB4019005FF347 /* Assets.xcassets */,
 				04E857322BDB4019005FF347 /* Info.plist */,
 				04E8572A2BDB4017005FF347 /* sun_movie.xcdatamodeld */,
 			);
@@ -124,6 +133,7 @@
 		04E857392BDB4072005FF347 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				04E8572D2BDB4019005FF347 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -235,6 +245,56 @@
 				05820063528F8F74B7CF2675 /* Pods_sun_movie.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+    04E857702BDB5117005FF347 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				04E857712BDB512E005FF347 /* Models */,
+				04E857722BDB5138005FF347 /* Repositories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		04E857712BDB512E005FF347 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04E857722BDB5138005FF347 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				04E857732BDB5155005FF347 /* MovieRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		04E857752BDB547C005FF347 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				04E857772BDB54E5005FF347 /* Local */,
+				04E857762BDB548F005FF347 /* APIService */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		04E857762BDB548F005FF347 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				04E857782BDB54F2005FF347 /* APIService.swift */,
+				04E8577C2BDB5528005FF347 /* Urls.swift */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		04E857772BDB54E5005FF347 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				04E8577A2BDB54FF005FF347 /* CoreDataManager.swift */,
+			);
+			path = Local;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,14 +417,18 @@
 				04E857432BDB415D005FF347 /* TabBarViewController.swift in Sources */,
 				04E857632BDB4369005FF347 /* SettingNavigator.swift in Sources */,
 				04E857692BDB43C7005FF347 /* Bindable.swift in Sources */,
+				04E8577D2BDB5528005FF347 /* Urls.swift in Sources */,
 				04E857532BDB42F6005FF347 /* HomeViewModel.swift in Sources */,
+				04E857792BDB54F2005FF347 /* APIService.swift in Sources */,
 				04E857222BDB4017005FF347 /* AppDelegate.swift in Sources */,
 				04E857452BDB4167005FF347 /* TabBarItems.swift in Sources */,
 				04E857672BDB43B8005FF347 /* BaseViewController.swift in Sources */,
+				04E8577B2BDB54FF005FF347 /* CoreDataManager.swift in Sources */,
 				04E8575B2BDB433D005FF347 /* HomeNavigator.swift in Sources */,
 				04E8576F2BDB4473005FF347 /* BaseNavigationController.swift in Sources */,
 				04E857502BDB42EB005FF347 /* SettingViewController.swift in Sources */,
 				04E857612BDB4361005FF347 /* SettingUseCase.swift in Sources */,
+				04E857742BDB5155005FF347 /* MovieRepository.swift in Sources */,
 				04E8574C2BDB42E0005FF347 /* FavoriteViewController.swift in Sources */,
 				04E8575D2BDB4348005FF347 /* FavoriteUseCase.swift in Sources */,
 				04E857592BDB4334005FF347 /* HomeUseCase.swift in Sources */,
