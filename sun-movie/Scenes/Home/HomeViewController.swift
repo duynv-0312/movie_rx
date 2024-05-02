@@ -165,7 +165,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             let cell = tableView.dequeueReusableCell(for: indexPath, cellType: SearchCell.self)
             cell.tappedSearch = { [weak self] in
                 guard let self else { return }
-                self.toSearchMovieScreen()
+                self.viewModel.toSearchMovieScreen()
             }
             return cell
         default:
@@ -186,7 +186,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             cell.configCell(movies: movies)
             cell.tappedMovie = { [weak self] movie in
                 guard let self, let movieID = movie.id else { return }
-                self.toMovieDetailScreen(movieID: movieID)
+                self.viewModel.toMovieDetailScreen(movieID: movieID)
             }
             return cell
         }
@@ -205,10 +205,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             movieHeader?.configView(title: sectionType.title)
             movieHeader?.showMoreTapped = { [weak self] in
                 guard let self = self else { return }
-//                let vc = ListMovieViewController()
-//                vc.category = sectionType.urlString
-//                vc.titleString = sectionType.title
-//                self.navigationController?.pushViewController(vc, animated: true)
+
             }
             return movieHeader
         }
@@ -218,17 +215,3 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return section == 0 ? 0 : 44
     }
 }
-
-extension HomeViewController {
-    func toMovieDetailScreen(movieID: Int) {
-//        let vc = MovieDetailViewController()
-//        vc.loadData(movieID: movieID)
-//        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    func toSearchMovieScreen() {
-//        let vc = SearchViewController()
-//        navigationController?.pushViewController(vc, animated: true)
-    }
-}
-
