@@ -10,6 +10,8 @@ target 'sun-movie' do
    pod 'RxSwift', '6.5.0'
    pod 'RxCocoa', '6.5.0'
    pod 'Alamofire'
+   pod 'Reusable'
+   pod 'Localize-Swift'
    # Pods for sun-movie
 
 end

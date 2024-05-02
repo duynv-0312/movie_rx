@@ -13,5 +13,7 @@ struct HomeViewModel {
 }
 
 extension HomeViewModel {
-    
+    func getMovies(urlString: String, completion: @escaping(Result<MovieResponse, Error>) -> Void) {
+        useCase.getMovies(urlString: urlString, completion: completion)
+    }
 }

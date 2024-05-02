@@ -22,7 +22,7 @@ final class TabBarViewController: UITabBarController {
     
     private func makeHome() -> UINavigationController {
         let navVC = BaseNavigationController()
-        let homeUseCase = HomeUseCase()
+        let homeUseCase = HomeUseCase(movieRepository: MovieRepository())
         let homeNavigator = HomeNavigator(navigationController: navVC)
         let homeVM = HomeViewModel(useCase: homeUseCase, navigator: homeNavigator)
         let homeVC = HomeViewController()
