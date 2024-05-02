@@ -10,7 +10,7 @@ import Foundation
 struct Urls {
     static let shared = Urls()
     let baseUrl = "https://api.themoviedb.org/3"
-    let key = "12345678"
+    let key = "95d6a6ef93001af6e75d828b5716d601"
     enum Path: String {
         case topRated = "/movie/top_rated"
         case popular = "/movie/popular"
