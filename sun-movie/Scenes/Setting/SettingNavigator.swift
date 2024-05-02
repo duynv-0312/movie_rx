@@ -13,5 +13,5 @@ protocol SettingNavigatorType {
 }
 
 struct SettingNavigator: SettingNavigatorType {
-    var navigationController: UINavigationController
+    var navigationController = UINavigationController()
 }

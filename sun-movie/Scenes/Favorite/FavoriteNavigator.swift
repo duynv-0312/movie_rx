@@ -13,5 +13,5 @@ protocol FavoriteNavigatorType {
 }
 
 struct FavoriteNavigator: FavoriteNavigatorType {
-    var navigationController: UINavigationController
+    var navigationController = UINavigationController()
 }

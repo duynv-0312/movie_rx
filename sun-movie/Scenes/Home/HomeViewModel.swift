@@ -16,4 +16,16 @@ extension HomeViewModel {
     func getMovies(urlString: String, completion: @escaping(Result<MovieResponse, Error>) -> Void) {
         useCase.getMovies(urlString: urlString, completion: completion)
     }
+    
+    func toMovieDetailScreen(movieID: Int) {
+        navigator.toMovieDetailScreen(movieID: movieID)
+    }
+    
+    func toSearchMovieScreen() {
+        navigator.toSearchMovieScreen()
+    }
+    
+    func toListMovieScreen() {
+        navigator.toListMovieScreen()
+    }
 }
