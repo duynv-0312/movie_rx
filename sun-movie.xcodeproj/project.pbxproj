@@ -49,6 +49,7 @@
 		0450E8602BE3F6E200E62F40 /* MovieDetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450E85F2BE3F6E200E62F40 /* MovieDetailNavigator.swift */; };
 		0450E8622BE3F6EE00E62F40 /* ActorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450E8612BE3F6EE00E62F40 /* ActorUseCase.swift */; };
 		0450E8642BE3F6FA00E62F40 /* ActorNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0450E8632BE3F6FA00E62F40 /* ActorNavigator.swift */; };
+		0450E8682BE3FE4D00E62F40 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0450E86A2BE3FE4D00E62F40 /* Localizable.strings */; };
 		04E857222BDB4017005FF347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E857212BDB4017005FF347 /* AppDelegate.swift */; };
 		04E857242BDB4017005FF347 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E857232BDB4017005FF347 /* SceneDelegate.swift */; };
 		04E8572C2BDB4017005FF347 /* sun_movie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04E8572A2BDB4017005FF347 /* sun_movie.xcdatamodeld */; };
@@ -124,6 +125,9 @@
 		0450E85F2BE3F6E200E62F40 /* MovieDetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailNavigator.swift; sourceTree = "<group>"; };
 		0450E8612BE3F6EE00E62F40 /* ActorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorUseCase.swift; sourceTree = "<group>"; };
 		0450E8632BE3F6FA00E62F40 /* ActorNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorNavigator.swift; sourceTree = "<group>"; };
+		0450E8652BE3FE1700E62F40 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		0450E8692BE3FE4D00E62F40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0450E86B2BE3FE5100E62F40 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		04E8571E2BDB4017005FF347 /* sun-movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sun-movie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E857212BDB4017005FF347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04E857232BDB4017005FF347 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -333,6 +337,7 @@
 			children = (
 				04E8572D2BDB4019005FF347 /* Assets.xcassets */,
 				0413F5B62BE39CD500C14CA0 /* Color.xcassets */,
+				0450E86A2BE3FE4D00E62F40 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -554,6 +559,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 04E857152BDB4017005FF347;
 			productRefGroup = 04E8571F2BDB4017005FF347 /* Products */;
@@ -580,6 +586,7 @@
 				0413F5B02BE39B6400C14CA0 /* ListMovieTableViewCell.xib in Resources */,
 				0450E8362BE3F58000E62F40 /* SearchViewController.xib in Resources */,
 				0413F5BC2BE3DBEC00C14CA0 /* MovieHeader.xib in Resources */,
+				0450E8682BE3FE4D00E62F40 /* Localizable.strings in Resources */,
 				0450E8422BE3F5A700E62F40 /* ActorViewController.xib in Resources */,
 				0450E83E2BE3F59A00E62F40 /* MovieDetailViewController.xib in Resources */,
 				04E857492BDB42D5005FF347 /* HomeViewController.xib in Resources */,
@@ -699,10 +706,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0450E86A2BE3FE4D00E62F40 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0450E8692BE3FE4D00E62F40 /* en */,
+				0450E86B2BE3FE5100E62F40 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		04E8572F2BDB4019005FF347 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				04E857302BDB4019005FF347 /* Base */,
+				0450E8652BE3FE1700E62F40 /* vi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -714,6 +731,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -774,6 +792,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
