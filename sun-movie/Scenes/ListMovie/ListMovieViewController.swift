@@ -7,8 +7,8 @@
 
 import UIKit
 
-final class ListMovieViewController: UIViewController {
-
+final class ListMovieViewController: UIViewController, Bindable {
+    var viewModel: ListMovieViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()

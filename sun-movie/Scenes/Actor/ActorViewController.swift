@@ -7,7 +7,8 @@
 
 import UIKit
 
-final class ActorViewController: UIViewController {
+final class ActorViewController: UIViewController, Bindable {
+    var viewModel: ActorViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

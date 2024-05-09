@@ -18,7 +18,12 @@ struct HomeNavigator: HomeNavigatorType {
     var navigationController = UINavigationController()
 
     func toMovieDetailScreen(movieID: Int) {
-        
+        let useCase = MovieDetailUseCase()
+        let navigator = MovieDetailNavigator(navigationController: navigationController)
+        let vm = MovieDetailViewModel(useCase: useCase, navigator: navigator)
+        let vc = MovieDetailViewController()
+        vc.bindViewModel(to: vm)
+        navigationController.pushViewController(vc, animated: true)
     }
     
     func toSearchMovieScreen() {
@@ -31,6 +36,11 @@ struct HomeNavigator: HomeNavigatorType {
     }
     
     func toListMovieScreen() {
-        
+        let useCase = ListMovieUseCase()
+        let navigator = ListMovieNavigator(navigationController: navigationController)
+        let vm = ListMovieViewModel(useCase: useCase, navigator: navigator)
+        let vc = ListMovieViewController()
+        vc.bindViewModel(to: vm)
+        navigationController.pushViewController(vc, animated: true)
     }
 }

@@ -205,7 +205,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             movieHeader?.configView(title: sectionType.title)
             movieHeader?.showMoreTapped = { [weak self] in
                 guard let self = self else { return }
-
+                self.viewModel.toListMovieScreen()
             }
             return movieHeader
         }
